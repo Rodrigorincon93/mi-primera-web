@@ -1,0 +1,32 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f4f4f8;
+  color: #0f1da0;
+  display: block;
+  margin: 10px auto;
+}
+
+h1 {
+  color: #db2a5f;
+  display: block;
+  margin: 10px auto;
+}
+img{
+  width: 150px;
+  height: auto;
+  max-width: 100%;
+  display: block;
+  margin: 10px auto;
+}
+
+button {
+  padding: 10px 20px;
+  border: 2px solid #229c1b;
+  border-radius: 30px;
+  display: block;
+  margin: 10px auto;
+  background-color: #db2a7a;
+  color: rgb(14, 28, 91);
+  cursor: pointer;
+}
