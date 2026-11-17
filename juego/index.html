@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta name="description" content="Crónicas de Lexara: un RPG de mundo abierto para aprender inglés. 5 mundos, puzles y laberintos que solo se superan entendiendo las instrucciones en inglés.">
+  <meta name="theme-color" content="#141a33">
+  <title>Crónicas de Lexara — RPG para aprender inglés</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="game"></canvas>
+
+  <div id="hud" class="hidden">
+    <div id="stats">
+      <div id="hearts"></div>
+      <div class="line"><span id="coins"></span><span id="lvl"></span><span id="bag"></span></div>
+      <div id="xpbar"><i></i></div>
+      <div id="place"></div>
+    </div>
+    <div id="hudR">
+      <div class="btns">
+        <button id="potBtn" title="Beber poción (+3 ❤️)"></button>
+        <button id="menuBtn" title="Menú (M)">☰</button>
+      </div>
+      <canvas id="mini" width="160" height="120"></canvas>
+    </div>
+  </div>
+
+  <div id="banner" class="hidden">
+    <div id="bEn"></div>
+    <div id="bEs" class="hidden"></div>
+    <div class="row"><button id="bSpeak">🔊 Escuchar</button><button id="bHint">💡 Español</button></div>
+  </div>
+
+  <div id="toasts"></div>
+
+  <div id="dialog" class="hidden">
+    <div id="dname"></div>
+    <div id="dtext"></div>
+    <div id="des" class="hidden"></div>
+    <div class="row">
+      <button id="dSpeak" title="Escuchar">🔊</button>
+      <button id="dTr" title="Traducir (T)">ES</button>
+      <span class="grow"></span>
+      <button id="dNext">Continuar ▶</button>
+    </div>
+  </div>
+
+  <div id="modal" class="hidden"><div class="card" id="card"></div></div>
+
+  <div id="touch" class="hidden">
+    <div id="dpad"><i class="n">▲</i><i class="w">◀</i><i class="e">▶</i><i class="s">▼</i></div>
+    <button id="btnA">A</button>
+  </div>
+
+  <div id="title">
+    <div class="tbox">
+      <div class="gems">💎 💎 💎 💎 💎</div>
+      <h1>Crónicas de Lexara</h1>
+      <h2>Los Cinco Cristales de la Palabra</h2>
+      <p>Un RPG de mundo abierto para <b>aprender inglés</b> jugando.<br>5 mundos · puzles · laberintos que solo se superan <b>entendiendo las instrucciones en inglés</b>.</p>
+      <button id="btnContinue" class="big hidden">▶ Continuar partida</button>
+      <button id="btnNew" class="big">✨ Nueva partida</button>
+      <p class="small">⌨️ Flechas / WASD para moverte · ESPACIO para interactuar · T traducir · M menú<br>📱 En móvil usa el mando táctil. Tu progreso se guarda solo en este dispositivo.</p>
+    </div>
+  </div>
+
+  <div id="fade"></div>
+
+  <script src="data.js"></script>
+  <script src="engine.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>
